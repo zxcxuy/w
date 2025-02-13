@@ -24,7 +24,7 @@ body {
 }
 
 .text {
-    font-size: 5em;
+    font-size: 4.5em;
     font-family: "Yeseva One", serif;
     color: #8a2032;
 }
@@ -52,7 +52,7 @@ body {
 }
 
 .yes {
-    margin-right: 2em;
+    margin-right: 0.5em;
     background-color: #2eff1c;
     color: #000;
     padding: 30px 15px;

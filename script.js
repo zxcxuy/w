@@ -51,36 +51,41 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+
 const yes = document.querySelector(".yes");
 const no = document.querySelector(".no");
-console.log(yes);
-console.log(no);
+const btnsContainer = document.querySelector(".buttons-container");
 touch = 0;
 no.addEventListener("click", ()=>{
     touch ++;
     console.log()
     switch (touch) {
         case 1:
-            yes.style.padding = "40px 120px";
+            yes.style.padding = "20px 60px";
             break;
         case 2:
-            yes.style.padding = "80px 160px";
+            yes.style.padding = "30px 80px";
             break;
         case 3:
-            yes.style.padding = "180px 200px";
-            break;
-        case 4:
+            yes.style.padding = "0";
+            btnsContainer.style = "flex-direction: column";
             yes.style.position = "fixed"; 
-            yes.style.top = "30%";
+            yes.style.top = "40%";
             yes.style.left = "5%";
             yes.style.width = "90%";
-            yes.style.height = "50%";
+            yes.style.height = "25%";
+            no.style.margin = "15px"
+            break;
+        case 4:
+            yes.style.top = "35%";
+            yes.style.left = "5%";
+            yes.style.width = "90%";
+            yes.style.height = "35%";
             yes.style.display = "flex";
             yes.style.justifyContent = "center";
             yes.style.alignItems = "center";
             yes.style.fontSize = "5em";
             yes.style.padding = "0";
-            yes.style.boxSizing = "border-box";
             no.style.display = "none";
         default:
             return;
